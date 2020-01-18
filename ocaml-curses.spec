@@ -3,7 +3,7 @@
 
 Name:           ocaml-curses
 Version:        1.0.3
-Release:        17%{?dist}
+Release:        18%{?dist}
 Summary:        OCaml bindings for ncurses
 
 Group:          Development/Libraries
@@ -93,6 +93,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Aug 08 2014 Richard W.M. Jones <rjones@redhat.com> - 1.0.3-18
+- Resolves: rhbz#1125624
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.3-17
 - Mass rebuild 2013-12-27
 
@@ -123,7 +126,7 @@ rm -rf $RPM_BUILD_ROOT
 * Wed Dec 30 2009 Richard W.M. Jones <rjones@redhat.com> - 1.0.3-8
 - Rebuild for OCaml 3.11.2.
 
-* Mon Oct  4 2009 Richard W.M. Jones <rjones@redhat.com> - 1.0.3-7
+* Mon Oct  5 2009 Richard W.M. Jones <rjones@redhat.com> - 1.0.3-7
 - Use ncursesw for wide character support.
 
 * Sat Jul 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.3-6
@@ -163,7 +166,7 @@ rm -rf $RPM_BUILD_ROOT
 * Thu Aug 30 2007 Richard W.M. Jones <rjones@redhat.com> - 0.1-4.20020319
 - Force rebuild because of changed BRs in base OCaml.
 
-* Mon Aug 24 2007 Richard W.M. Jones <rjones@redhat.com> - 0.1-3.20020319
+* Fri Aug 24 2007 Richard W.M. Jones <rjones@redhat.com> - 0.1-3.20020319
 - License is LGPL 2.1 or any later version.
 
 * Mon Aug  6 2007 Richard W.M. Jones <rjones@redhat.com> - 0.1-2.20020319
