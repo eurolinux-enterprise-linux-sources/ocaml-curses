@@ -3,7 +3,7 @@
 
 Name:           ocaml-curses
 Version:        1.0.3
-Release:        16%{?dist}
+Release:        17%{?dist}
 Summary:        OCaml bindings for ncurses
 
 Group:          Development/Libraries
@@ -93,6 +93,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.3-17
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.3-16
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
