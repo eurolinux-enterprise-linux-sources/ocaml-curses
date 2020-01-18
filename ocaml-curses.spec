@@ -3,7 +3,7 @@
 
 Name:           ocaml-curses
 Version:        1.0.3
-Release:        18%{?dist}
+Release:        20%{?dist}
 Summary:        OCaml bindings for ncurses
 
 Group:          Development/Libraries
@@ -11,7 +11,8 @@ License:        LGPLv2+
 URL:            http://savannah.nongnu.org/projects/ocaml-tmk/
 Source0:        http://download.savannah.gnu.org/releases/ocaml-tmk/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-ExcludeArch:    sparc64 s390 s390x
+
+ExcludeArch:    s390
 
 BuildRequires:  ocaml >= 4.00.1
 BuildRequires:  ocaml-findlib-devel >= 1.3.3-3
@@ -93,6 +94,14 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sat Sep 23 2017 Richard W.M. Jones <rjones@redhat.com> - 1.0.3-20
+- Remove ExcludeArch and build on s390x.
+  related: rhbz#1447991
+
+* Fri Sep 22 2017 Richard W.M. Jones <rjones@redhat.com> - 1.0.3-19
+- Rebuild for OCaml 4.05
+  resolves: rhbz#1447991
+
 * Fri Aug 08 2014 Richard W.M. Jones <rjones@redhat.com> - 1.0.3-18
 - Resolves: rhbz#1125624
 
